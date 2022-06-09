@@ -14,8 +14,8 @@ def subscribe(request):
                                     form.cleaned_data)
             mail.send_mail('Confirmação de inscrição',
                            body,
-                           'contato@eventex.com.br',
-                           ['contato@eventex.com.br', form.cleaned_data['email']])
+                           'vendas.pjhiramaq@gmail.com',
+                           ['vendas.pjhiramaq@gmail.com', form.cleaned_data['email']])
             from django.contrib import messages
             messages.success(request, 'Inscricao realizada com sucesso!')
             return HttpResponseRedirect('/inscricao/')
